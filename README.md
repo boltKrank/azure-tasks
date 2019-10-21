@@ -29,4 +29,26 @@ https://aka.ms/devicelogin
 
 #### create resource group:
 
-az group create --name SimonResources --location australiaeast
+az group create --name SimonAnderson --location australiaeast
+
+#### create vm:
+
+az vm create --resource-group SimonAnderson \
+  --name TestVM \
+  --image OpenLogic:CentOS:7.7:7.7.20190920 \
+  --generate-ssh-keys \
+  --location australiaeast \
+  --output json \
+  --verbose
+
+#### find available images
+
+az vm image list -all
+
+just centOS:
+
+az vm image list -f CentOS --all
+
+#### deleting a resource group and all resources in it:
+
+az group delete --name SimonAnderson --no-wait
