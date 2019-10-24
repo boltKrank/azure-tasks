@@ -1,0 +1,11 @@
+{
+  "description": "Delete an Azure resource group",
+  "supports_noop": false,
+  "input_method": "environment",
+  "parameters": {
+    "resourcegroup":{
+	"description": "The resource group to make the VM in",
+	"type": "String"
+    }
+  }
+}

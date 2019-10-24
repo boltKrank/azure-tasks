@@ -1,5 +1,5 @@
 {
-  "description": "Create an Azure VM",
+  "description": "Create an Azure resource group",
   "supports_noop": false,
   "input_method": "environment",
   "parameters": {
@@ -9,14 +9,6 @@
     },
     "location": {
       "description": "The region to create the VM",
-      "type": "String"
-    },
-    "image": {
-      "description": "The image to use to make the VM",
-      "type": "String"
-    },
-    "name": {
-      "description": "The name to give the image",
       "type": "String"
     }
   }
